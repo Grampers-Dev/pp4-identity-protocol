@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-tw!8_n%nb&ytq^xcs_pk=blox^%vp!4l_9*z5wmstw@s-@ljw+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-grampers-dev-pp4-identit-dm3m1vrgoh.us2.codeanyapp.com',
-                '.herokuapp.com']
+                 '.herokuapp.com']
 
 
 # Application definition
@@ -69,6 +69,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'identity_protocol.wsgi.application'
 
