@@ -39,6 +39,6 @@ urlpatterns = [
     path('identityowner/<str:owner_id>/', views.view_identity_owner, name='view_identity_owner'),
 
     # Django admin path
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
 ]
 

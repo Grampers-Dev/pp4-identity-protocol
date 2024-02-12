@@ -9,6 +9,7 @@ import json
 def index(request):
     return HttpResponse("Hello, Degen!")
 
+#Should I use the @csrf_exempt decorator for the following functions?
 @csrf_exempt
 @require_http_methods(["POST"])
 def create_user_wallet(request):
