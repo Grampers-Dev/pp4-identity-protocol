@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['8000-grampers-dev-pp4-identit-dm3m1vrgoh.us2.codeanyapp.com',
                  '.herokuapp.com',
-                 'https://identity-protocol-2d1595e2d0da.herokuapp.com/home'
+                 'https://identity-protocol-2d1595e2d0da.herokuapp.com/home',
                  '127.0.0.1',
 ]
 
