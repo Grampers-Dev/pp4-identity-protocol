@@ -9,7 +9,7 @@ body {
 .callout-container {
     height: 100vh;
 
-    background: url('blockchain-monochrome-earth-sphere-uknrsf6rlwtyahb9.jpg') no-repeat bottom right fixed;
+    background: url('static\images\blockchain-monochrome-earth-sphere-uknrsf6rlwtyahb9.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,6 +48,15 @@ body {
     position: relative;
 }
   
+main {
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border: 2px solid #ff00bf;
+    border-radius: 10px;
+    color: #f7f2fa;
+}
 
 /* Jumbotron */
 
@@ -233,6 +242,13 @@ hr {
 .card {
     border: 2px solid #ff00bf;
     border-radius: 10px;
+}
+
+.card-body {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #myChart {
