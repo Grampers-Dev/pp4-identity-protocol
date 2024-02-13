@@ -1,0 +1,456 @@
+body {
+    font-family: 'unbounded', sans-serif;
+    margin: 20px;
+    font-size: 16px;
+    background-color: #333;
+
+}
+
+.callout-container {
+    height: 100vh;
+
+    background: url('blockchain-monochrome-earth-sphere-uknrsf6rlwtyahb9.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: fadeIn 10s forwards; /* Adjust the time as needed */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+/* Main-Logo */
+
+.logo-main {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+  
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: rgba(255, 255, 255, 0.);
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron .lead {
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #ff0000;
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+h1, p, h3, h2, li {
+    color: #f7f2fa;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(51, 51, 51);
+    border: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+a.nav-link {
+    color: blueviolet;
+}
+
+.d-sm-inline{
+    color: #ffffff;
+}
+
+.card-text {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contractData ,.contractSecurity, .contractWallet {
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-color: #09ff00;
+    padding: 20px;
+    border-radius: 5px;
+    color: #a125ee;
+    background-color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contractData {
+    color: #a125ee;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contractDataResult {
+    color: #ff0303;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.featureAdmin {
+    color: #a125ee;
+    font-size: 18px;
+    margin-top: 200px;
+    background-color: rgba(82, 82, 82, 0.5);
+    border: 2px solid #ff00bf;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+#successfulWalletAddresses {
+    color: #ff0303;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    color: #a125ee;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.navbar-brand {
+    color: #a125ee;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-info {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.contractData { 
+    background-color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn btn-warning {
+    background-color: #a125ee;
+    color: #ffffff;
+    border-color: #a125ee;
+    position: right 0;
+}
+
+.modal  {
+    background-color: #333;
+    color: #a125ee;
+    border-color: #a125ee;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(255, 0, 191);
+}
+
+.post {
+    border: 2px solid #ff00bf;
+    border-radius: 10px;
+}
+
+.card {
+    border: 2px solid #ff00bf;
+    border-radius: 10px;
+}
+
+#myChart {
+    border: 2px solid #ff00bf;
+    padding: 20px;
+}
+
+.chart-container {
+    margin: auto;
+    border: 2px solid #ff00bf;
+    border-radius: 10px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.btn-group .btn {
+    width: auto; /* or a specific fixed width, e.g., 100px */
+    height: auto; /* or a specific fixed height, e.g., 40px */
+    z-index: 1;
+}
+
+.comments-section {
+    /* Ensure enough space is maintained between the comment section and the buttons */
+    margin-bottom: 15px; /* adjust as necessary */
+}
+
+#signUpButton {
+    position: relative;
+    z-index: 0; /* Any value higher than the z-index of .opaque-overlay */
+    animation: fadeOut 10s forwards; /* Adjust the time as needed */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+
+.container-dashborad {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+/* Blog 
+---------------------*/
+.blog-grid {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .blog-grid .blog-img {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .blog-grid .blog-img .date {
+    position: absolute;
+    background: #3a3973;
+    color: #ffffff;
+    padding: 8px 15px;
+    left: 0;
+    top: 10px;
+    font-size: 14px;
+  }
+  .blog-grid .blog-info {
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 20px;
+    margin: -30px 20px 0;
+    position: relative;
+  }
+  .blog-grid .blog-info h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+  .blog-grid .blog-info h5 a {
+    color: #3a3973;
+  }
+  .blog-grid .blog-info p {
+    margin: 0;
+  }
+  .blog-grid .blog-info .btn-bar {
+    margin-top: 20px;
+  }
+  
+  .px-btn-arrow {
+      padding: 0 50px 0 0;
+      line-height: 20px;
+      position: relative;
+      display: inline-block;
+      color: #fe4f6c;
+      -moz-transition: ease all 0.3s;
+      -o-transition: ease all 0.3s;
+      -webkit-transition: ease all 0.3s;
+      transition: ease all 0.3s;
+  }
+  
+  
+  .px-btn-arrow .arrow {
+      width: 13px;
+      height: 2px;
+      background: currentColor;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 25px;
+      -moz-transition: ease right 0.3s;
+      -o-transition: ease right 0.3s;
+      -webkit-transition: ease right 0.3s;
+      transition: ease right 0.3s;
+  }
+  
+  .px-btn-arrow .arrow:after {
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid currentColor;
+      border-top: 2px solid currentColor;
+      content: "";
+      position: absolute;
+      top: -3px;
+      right: 0;
+      display: inline-block;
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+  
+.accordion-body {
+    background-color: #333;
+}
+
+  .footer {
+    background:#333;
+	padding-bottom: 50px;
+	padding-top: 80px;
+}
+.footer_menu {
+	margin-bottom: 20px;
+}
+.footer_menu ul {
+	list-style: none;
+	text-align: center;
+}
+.footer_menu ul li{display: inline-block;}
+.footer_menu ul li a {
+	color:#fff;
+	padding: 0 10px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer_menu ul li a:hover{color:#554c86;}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile{margin-bottom:40px;}
+.footer_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.footer_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.footer_profile ul li{margin:2px;}
+}
+.footer_profile ul li a img{width:60px;}
+
+.footer_profile ul li a {
+	background: #554c86;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 50%;
+	line-height: 40px;
+	box-sizing: border-box;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	transition: .3s;
+	color: #fff;
+}
+.footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.reply-content {
+    color: #000000;
+}
+
+textarea#postText {
+    margin-top: 200px;
+}
+
+.replies {
+    color: #000000;
+}
+
+.form-control {
+    color: #f8f9fa;
+}
