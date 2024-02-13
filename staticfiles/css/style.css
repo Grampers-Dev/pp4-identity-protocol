@@ -180,6 +180,17 @@ a.nav-link {
     padding: 40px;
 }
 
+.feature {
+    color: #a125ee;
+    font-size: 18px;
+    margin-top: 200px;
+    background-color: rgba(82, 82, 82, 0.5);
+    border: 2px solid #ff00bf;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
 #successfulWalletAddresses {
     color: #ff0303;
     font-size: 18px;
@@ -242,6 +253,13 @@ hr {
 .card {
     border: 2px solid #ff00bf;
     border-radius: 10px;
+}
+
+.card-body {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #myChart {

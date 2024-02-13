@@ -54,45 +54,77 @@
         </div>
     </nav>
 
-    <main>
-        <button id="enableEthereumButton">Enable Ethereum</button>
-        <button id="btnClaimIdentity">Claim Identity</button>
-        <div id="successMessage"></div>
-        <form id="requestTokensForm">
-            <input type="text" id="walletAddress" placeholder="Enter wallet address">
-            <button type="submit">Request Tokens</button>
-        </form>
-        <div id="metamaskInstallMessage"></div>
-        <div id="successfulWalletAddresses"></div>
-        <canvas id="myChartFeature1"></canvas>
+    
+    
         <!-- Add more content as needed -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3><i class="fas fa-cogs d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+                    <h3>Enables connection to MetaMask:</h3>
+                    <p>Initialises Contract:</p>
+                    <p>Provides link for installation</p>
+                    <button id="enableEthereumButton" class="btn btn-primary">Enable Ethereum</button>
+                    <div id="metamaskInstallMessage"></div>
+                    <div id="successMessage"></div>
+                </div>
+            </div>
 
-        <!-- Information List Section -->
-        <div class="accordion mt-4" id="infoAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingInfo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
-                        How It Works
-                    </button>
-                </h2>
-                <div id="collapseInfo" class="accordion-collapse collapse" aria-labelledby="headingInfo" data-bs-parent="#infoAccordion">
-                    <div class="accordion-body">
-                        <p>Once you submit your wallet address, here's what happens:</p>
-                        <ul>
-                            <li>Your request is sent to our site administrators.</li>
-                            <li>An admin reviews your request for test Matic tokens.</li>
-                            <li>Upon approval, an admin will send the test tokens to the provided wallet address.</li>
-                            <li>You will receive a confirmation email once the tokens have been dispatched.</li>
-                            <li>Please allow up to 24 hours for the tokens to reflect in your wallet.</li>
-                        </ul>
-                        <p class="text-muted">Note: This service is only for testing purposes and the tokens have no real-world value.</p>
-                    </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3><i class="far fa-chart-bar d-none d-sm-block"></i> Feature 2</h3>
+                    <h3>Claim Identity via Smart Contract Interation:</h3>
+                    <p>Processes transaction:</p>
+                    <p>Claimed address loged on the Mumbai Test Network:</p>
+                    <button id="btnClaimIdentity" class="btn btn-secondary">Claim Identity</button>
+                    <p id="alreadyClaimedMessage" class="text-warning"></p>
+                    <div id="successMessage"></div>
+                </div>
+            </div>
+            
+            <div class="col-12 d-md-none d-lg-block col-lg-4">
+                <div class="feature">
+                    <h3><i class="fas fa-history d-none d-sm-block"></i> Feature 3</h3>
+                    <h3>Request Test Tokens:</h3>
+                    <p>Users sends the admin a request for Matic Test Tokens:</p>
+                    <p>Test tokens are sent to the users wallet:</p>
+                    <form id="requestTokensForm">
+                        <input type="text" id="walletAddress" placeholder="Enter wallet address">
+                        <button type="submit" class="btn btn-primary">Request Tokens</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+
+
+
+         <!-- Information List Section -->
+         <div class="accordion mt-4" id="infoAccordion">
+             <div class="accordion-item">
+                 <h2 class="accordion-header" id="headingInfo">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+                         How It Works
+                     </button>
+                 </h2>
+                 <div id="collapseInfo" class="accordion-collapse collapse" aria-labelledby="headingInfo" data-bs-parent="#infoAccordion">
+                     <div class="accordion-body">
+                         <p>Once you submit your wallet address, here's what happens:</p>
+                         <ul>
+                             <li>Your request is sent to our site administrators.</li>
+                             <li>An admin reviews your request for test Matic tokens.</li>
+                             <li>Upon approval, an admin will send the test tokens to the provided wallet address.</li>
+                             <li>You will receive a confirmation email once the tokens have been dispatched.</li>
+                             <li>Please allow up to 24 hours for the tokens to reflect in your wallet.</li>
+                         </ul>
+                         <p class="text-muted">Note: This service is only for testing purposes and the tokens have no real-world value.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
     
-    <div class="container my-5">
+     
+     <div class="container my-5">
         <div class="card">
             <div class="card-header">
                 Connect to Mumbai Network
@@ -110,8 +142,7 @@
                 </p>
             </div>
         </div>
-    </div>
-    </main>
+     </div>
 
     <footer>
         <!-- Footer content -->
