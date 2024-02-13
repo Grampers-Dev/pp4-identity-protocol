@@ -21,6 +21,6 @@ from claim_identity import views as index_views  # Import views module
 urlpatterns = [
     path('claim_identity', index_views.index,
          name='index'),  # Use correct function name
-    path('claim_identity/', include('claim_identity.urls')),
+    path('home/', include('claim_identity.urls')),
     path('admin/', admin.site.urls),
 ]

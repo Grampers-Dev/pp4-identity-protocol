@@ -21,6 +21,7 @@ from . import views  # Import views for your new models
 
 urlpatterns = [
     path('claim_identity', index_views.index, name='index'),  # Existing path
+    path('', views.home, name='home'),
 
     # URLs for UserWallet
     path('userwallet/create/', views.create_user_wallet, name='create_user_wallet'),

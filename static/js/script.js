@@ -1,4 +1,4 @@
-import { TestEnvironment } from "jest-environment-jsdom";
+//import { TestEnvironment } from "jest-environment-jsdom";
 
 document.addEventListener("DOMContentLoaded", async function () {
     // Get references to HTML elements if they exist
@@ -252,17 +252,17 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 });
 
-export function initializeScript() {
+//export function initializeScript() {
     // function implementation
-}
+//}
 
-export function handleMetaMask() {
+//export function handleMetaMask() {
     // function implementation
-}
+//}
 
-export function handleRequestTokensForm() {
+//export function handleRequestTokensForm() {
     // function implementation
-}
+//}
 
 
 

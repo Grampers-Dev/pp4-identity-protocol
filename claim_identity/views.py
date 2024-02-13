@@ -9,6 +9,9 @@ import json
 def index(request):
     return HttpResponse("Hello, Degen!")
 
+def home(request):
+    return render(request, 'base.html')
+
 #Should I use the @csrf_exempt decorator for the following functions?
 @csrf_exempt
 @require_http_methods(["POST"])
