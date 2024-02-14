@@ -54,7 +54,24 @@
         </div>
     </nav>
 
-    
+    <div class="container-fluid callout-container">
+        <!-- Callout -->
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+                    <h1 class="jumbotron-header">Blockchain Analytics!</h1>
+                    <hr class="block-divider block-divider--orange">
+                    <p class="lead">Sign up today to get access to our blockchain analytics service!</p>
+                        <s class="d-none d-sm-inline">€19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First month is free!</mark></strong></p>
+                        <button  id="signUpButton" type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up!</button>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Not Financle Advive</small></p>
+                </section>
+            </div>
+        </div>
+        <!-- /.callout -->
+    </div>    
     
         <!-- Add more content as needed -->
         <div class="row">
@@ -144,9 +161,143 @@
         </div>
      </div>
 
-    <footer>
-        <!-- Footer content -->
-    </footer>
+     <hr class="block-divider block-divider--orange">
+
+     <div id="signUpModal"class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up To Identity Protocol!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                        </div>
+                    
+                        <!-- Email Address -->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                    
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    
+                        <!-- Repeat Password -->
+                        <div class="form-group">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                        </div>
+                    
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890">
+                        </div>
+                    
+                        <!-- Date of Birth -->
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+                    
+                        <!-- Address -->
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Street address">
+                            <!-- Additional fields for city, state, and zip code can be added here -->
+                        </div>
+                    
+                        <!-- Gender Selection -->
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <!-- Additional options or 'Prefer not to say' -->
+                        </div>
+                    
+                        <!-- Terms and Conditions Checkbox -->
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck">
+                            <label class="form-check-label" for="termsCheck">I agree to the Terms and Conditions</label>
+                        </div>
+                    
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <hr class="block-divider block-divider--orange">
+
+     <div class="footer">
+         <div class="container">		
+             <div class="row text-center">						
+                 <div class="col-lg-12 col-sm-12 col-xs-12">
+                     <div class="footer_menu">
+                         <ul>
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="#">About</a></li>
+                             <li><a href="dashborad.html">Dashborad</a></li>
+                             <li><a href="#">Works</a></li>
+                             <li><a href="#">Contact</a></li>
+                         </ul>
+                     </div>						
+                     <div class="footer_copyright">
+                         <p>© 2024 Identity Protocol. All Rights Reserved.</p>
+                     </div>	
+                     <div class="footer_profile">
+                         <ul>
+                             <li>
+                                 <a href="https://facebook.com" target="_blank" rel="noopener"
+                                     aria-label="Visit our Facebook page (opens in a new tab)">
+                                     <i class="fab fa-facebook"></i>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="https://twitter.com" target="_blank" rel="noopener"
+                                     aria-label="Visit our Twitter page (opens in a new tab)">
+                                     <i class="fab fa-twitter-square"></i>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="https://youtube.com" target="_blank" rel="noopener"
+                                     aria-label="Visit our YouTube page (opens in a new tab)">
+                                     <i class="fab fa-youtube-square"></i>
+                                 </a>
+                             </li>
+                             <li>
+                                 <li>
+                                     <a href="https://instagram.com" target="_blank" rel="noopener"
+                                         aria-label="Visit our Instagram page (opens in a new tab)">
+                                         <i class="fab fa-instagram"></i>
+                                     </a>
+                                 </li>
+                         </ul>
+                     </div>						
+                 </div><!--- END COL -->							
+             </div><!--- END ROW -->					
+         </div><!--- END CONTAINER -->
+     </div>
 
     <!-- Load your JavaScript file -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
