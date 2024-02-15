@@ -113,7 +113,60 @@
             </div>
         </div>
 
+        <h1>Posts list</h1>
+    {% for post in object_list %}
+    <h2>{{post.title}}</h2>
+    <p>{{post.excerpt}}</p>
+    <p>Author: {{post.author}}</p>
+    {% endfor %}
 
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3><i class="fas fa-cogs d-none d-sm-block"></i> Feature 4 <span class="badge badge-success">NEW!</span></h3>
+                    <h3>Enables users to Unclaim address:</h3>
+                    <p>Description: This feature allows users to unclaim an address, presumably from a smart contract.</p>
+                    <p>Steps:</p>
+                    <ol>
+                        <li>Initialization: The contract associated with the unclaim process needs to be initialized.</li>
+                        <li>Interaction with Smart Contract: The user initiates an interaction with the smart contract to perform the unclaim action.</li>
+                        <li>Unclaim Process: The smart contract executes the unclaim process, removing the claimed status from the address.</li>
+                    </ol>
+                    <p>Explanation:</p>
+                    <ul>
+                        <li>Initializing the contract ensures that the JavaScript application can interact with the smart contract.</li>
+                        <li>Interacting with the smart contract involves calling the appropriate function/method to trigger the unclaim process.</li>
+                        <li>The unclaim process within the smart contract likely involves updating the contract's state to reflect that the address is no longer claimed.</li>
+                    </ul>
+                    <button id="btnUnclaim" class="btn btn-secondary">Unclaim Address</button>
+                </div>
+            </div>            
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="feature">
+                    <h3><i class="far fa-chart-bar d-none d-sm-block"></i> Feature 2</h3>
+                    <h3>Claim Identity via Smart Contract Interation:</h3>
+                    <p>Processes transaction:</p>
+                    <p>Claimed address loged on the Mumbai Test Network:</p>
+                    <button id="btnClaimIdentity" class="btn btn-secondary">Claim Identity</button>
+                    <p id="alreadyClaimedMessage" class="text-warning"></p>
+                    <div id="successMessage"></div>
+                </div>
+            </div>
+            
+            <div class="col-12 d-md-none d-lg-block col-lg-4">
+                <div class="feature">
+                    <h3><i class="fas fa-history d-none d-sm-block"></i> Feature 3</h3>
+                    <h3>Request Test Tokens:</h3>
+                    <p>Users sends the admin a request for Matic Test Tokens:</p>
+                    <p>Test tokens are sent to the users wallet:</p>
+                    <form id="requestTokensForm">
+                        <input type="text" id="walletAddress" placeholder="Enter wallet address">
+                        <button type="submit" class="btn btn-primary">Request Tokens</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
          <!-- Information List Section -->
          <div class="accordion mt-4" id="infoAccordion">

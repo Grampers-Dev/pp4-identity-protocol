@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import UserWallet, Transaction, Claim, IdentityOwner
+from .models import UserWallet, Transaction, Claim, IdentityOwner, Post, Comment
+
+# Register your models here.
+admin.site.register(Post)
+admin.site.register(Comment)
 
 # Admin class for UserWallet
 class UserWalletAdmin(admin.ModelAdmin):
