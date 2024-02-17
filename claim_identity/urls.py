@@ -17,11 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from claim_identity import views as index_views  # Import views module
+from django.urls import include
 from . import views  # Import views for your new models
 
 urlpatterns = [
     path('claim_identity', index_views.index, name='index'),  # Existing path
     path('', views.home, name='home'),
+    path('post/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('post/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+
+    
 
     # URLs for UserWallet
     path('userwallet/create/', views.create_user_wallet, name='create_user_wallet'),

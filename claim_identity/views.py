@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views import generic
+from django.views.generic.detail import DetailView
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
-from .models import UserWallet, Transaction, Claim, IdentityOwner
+from .models import UserWallet, Transaction, Claim, IdentityOwner, Post
 import json
 
 def index(request):
@@ -11,6 +13,12 @@ def index(request):
 
 def home(request):
     return render(request, 'base.html')
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = 'post_list.html'  # Replace 'post_detail.html' with the name of your template
+    context_object_name = 'post'  # This will be the variable name used in the template to access the post object
+
 
 #Should I use the @csrf_exempt decorator for the following functions?
 @csrf_exempt

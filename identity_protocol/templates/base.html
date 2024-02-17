@@ -299,7 +299,14 @@
             </div>
         </div>
     </div>
+     
+    <main class="flex-shrink-0 main-bg">
 
+        {% block content %}
+        {% include 'post_list.html' %}
+        {% endblock content %}
+    </main>
+    
      <hr class="block-divider block-divider--orange">
 
      <div class="footer">

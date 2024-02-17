@@ -21,6 +21,12 @@ from claim_identity import views as index_views  # Import views module
 urlpatterns = [
     path('claim_identity', index_views.index,
          name='index'),  # Use correct function name
+    path('', include('claim_identity.urls')),
     path('home/', include('claim_identity.urls')),
     path('admin/', admin.site.urls),
+    path('userwallet/', include('claim_identity.urls')),
+    path('transaction/', include('claim_identity.urls')),
+    path('claim/', include('claim_identity.urls')),
+    path('identityowner/', include('claim_identity.urls')),
+
 ]

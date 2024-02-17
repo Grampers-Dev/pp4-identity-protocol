@@ -1,8 +1,5 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% block content %}
 {% load static %}
-{% load crispy_forms_tags %}
-
-{% block content %}
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -74,21 +71,44 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="col-md-4 card mb-4  mt-3 ">
+        <div class="col-md-4 card mb-4 mt-3">
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Leave a comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
-                <form id="commentForm" method="post" style="margin-top: 1.3em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
-                    <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </form>
+                    <h3>Leave a comment:</h3>
+                    <p>Posting as: {{ user.username }}</p>
+                    <form id="commentForm" method="post" style="margin-top: 1.3em;">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_content" class="form-label">Content:</label>
+                            <textarea id="id_content" name="content" class="form-control" rows="3" required></textarea>
+                        
+                         <!-- Add other form fields as needed -->
+                         <textarea id="id_body" name="body" class="form-control" rows="3" required>
+                         <input type="hidden" name="post_id" value="{{ post.id }}">
+                         <input type="hidden" name="author" value="{{ user.username }}">
+                         <input type="hidden" name="author_email" value="{{ user.email }}">
+                         <input type="hidden" name="approved" value="False">
+                         <input type="hidden" name="created_on" value="{{ post.created_on }}">
+                         <input type="hidden" name="updated_on" value="{{ post.updated_on }}">
+                         <input type="hidden" name="parent" value="None">
+                         <input type="hidden" name="reply_to" value="None">
+                         <input type="hidden" name="reply_to_author" value="None">
+                         <input type="hidden" name="reply_to_author_email" value="None">
+                         <input type="hidden" name="reply_to_id" value="None">
+                         <input type="hidden" name="reply_to_created_on" value="None">
+                         <input type="hidden" name="reply_to_updated_on" value="None">
+                         <input type="hidden" name="reply_to_approved" value="None">
+                         <input type="hidden" name="reply_to_parent" value="None">
+                         <input type="hidden" name="reply_to_reply_to" value="None">
+                         <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button></textarea>
+                        </div>
+                    </form>
                 {% else %}
-                <p>Log in to leave a comment</p>
+                    <p>Log in to leave a comment</p>
                 {% endif %}
             </div>
         </div>
+        
     </div>
 </div>
 <!-- Delete confirmation modal -->
